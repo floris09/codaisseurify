@@ -27,9 +27,9 @@ module Codaisseurify
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-  end
 
-  console do
-    ActiveRecord::Base.connection
+    console do
+      ActiveRecord::Base.connection
+    end
   end
 end
