@@ -71,14 +71,14 @@ Song.create!([
 ])
 
 Song.create!([
-{name: "Böxig Leise", artist: paul_kalkbrenner},
-{name: "GutesdNitzwe", artist: paul_kalkbrenner},
-{name: "Jestrü", artist: paul_kalkbrenner},
-{name: "Schnake", artist: paul_kalkbrenner},
-{name: "KleinesdBu", artist: paul_kalkbrenner},
-{name: "DesdStabesdReu", artist: paul_kalkbrenner},
-{name: "SagtedDerdB", artist: paul_kalkbrenner},
-{name: "Kruppze", artist: paul_kalkbrenner},
-{name: "Schmökelu", artist: paul_kalkbrenner},
-{name: "DerdBreuz", artist: paul_kalkbrenner}
+  {name: "Böxig Leise", artist: paul_kalkbrenner},
+  {name: "GutesdNitzwe", artist: paul_kalkbrenner},
+  {name: "Jestrü", artist: paul_kalkbrenner},
+  {name: "Schnake", artist: paul_kalkbrenner},
+  {name: "KleinesdBu", artist: paul_kalkbrenner},
+  {name: "DesdStabesdReu", artist: paul_kalkbrenner},
+  {name: "SagtedDerdB", artist: paul_kalkbrenner},
+  {name: "Kruppze", artist: paul_kalkbrenner},
+  {name: "Schmökelu", artist: paul_kalkbrenner},
+  {name: "DerdBreuz", artist: paul_kalkbrenner}
 ])
