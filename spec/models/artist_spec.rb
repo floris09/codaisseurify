@@ -6,4 +6,15 @@ RSpec.describe Artist, type: :model do
     it { is_expected.to validate_length_of(:name).is_at_most(50) }
     it { is_expected.to validate_length_of(:bio).is_at_most(500) }
   end
+
+  describe "Association with song" do
+    let!(:artist) { create :artist }
+    let!(:song) { create :song, artist: artist }
+
+    it { is_expected.to have_many :songs}
+
+    it "deletes associated songs" do
+      expect { artist.destroy }.to change(Song, :count).by(-1)
+    end
+  end
 end
