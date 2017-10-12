@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :song do
-    name "MyString"
-    artist nil
+    name { Faker::Lorem.sentence(10) }
+    artist { build(:artist) }
   end
 end
