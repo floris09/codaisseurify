@@ -1,3 +1,6 @@
+Artist.destroy_all
+Song.destroy_all
+Photo.destroy_all
 
 guns_roses = Artist.create!(name: "Guns N' Roses", bio: "Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985. The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler. Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million in the United States, making them the 41st best-selling artist of all time.")
 
@@ -82,3 +85,11 @@ Song.create!([
   {name: "Schmökelu", artist: paul_kalkbrenner},
   {name: "DerdBreuz", artist: paul_kalkbrenner}
 ])
+
+Photo.create!([
+  {remote_image_url: "http://res.cloudinary.com/florismeininger/image/upload/c_scale,w_777/v1507880746/Codaisseurify/GunsRoses_bqvgzx.jpg" , artist: guns_roses},
+  {remote_image_url: "http://res.cloudinary.com/florismeininger/image/upload/v1507880746/Codaisseurify/Chef_Special_rgtgde.jpg", artist: chef_special},
+  {remote_image_url: "http://res.cloudinary.com/florismeininger/image/upload/v1507880746/Codaisseurify/AndreHazes_d9m0xo.jpg" , artist: andre_hazes},
+  {remote_image_url: "http://res.cloudinary.com/florismeininger/image/upload/v1507880746/Codaisseurify/SnoopDogg_xyqpwh.jpg" , artist: snoop_dogg},
+  {remote_image_url: "http://res.cloudinary.com/florismeininger/image/upload/v1507880746/Codaisseurify/PaulKalkbrenner_hx0qos.jpg", artist: paul_kalkbrenner}
+  ])
