@@ -1,5 +1,7 @@
+<div class='container-fluid'>
 <h1>Artists</h1>
 
 <% @artists.each do |artist| %>
-<a href="<% link_to artist %>"><div style="background:url(<%= artist.photo.image %>);" class="round-img"><p><%= artist.name %></p></div></a>
+<a href="<% link_to artist %>"><div style="background:url(<%= artist.photo.image %>);background-size:cover;" class="round-img"><p><%= artist.name %></p></div></a>
 <% end %>
+</div>
