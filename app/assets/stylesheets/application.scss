@@ -1,2 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.round-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.round-img p {
+  font-size: 25px;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
