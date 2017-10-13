@@ -2,6 +2,8 @@
 <h1>Artists</h1>
 
 <% @artists.each do |artist| %>
-<a href="<% link_to artist %>"><div style="background:url(<%= artist.photo.image %>);background-size:cover;" class="round-img"><p><%= artist.name %></p></div></a>
+<%= link_to artist do %>
+<div style="background:url(<%= artist.photo.image %>);background-size:cover;" class="round-img"><p><%= artist.name %></p></div>
+<% end %>
 <% end %>
 </div>
