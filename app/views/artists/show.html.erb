@@ -1,5 +1,14 @@
-<h1><%= @artist.name %></h1>
+<div class=container-fluid>
+<%= image_tag @artist.photo.image, class: "artist-img" %>
+<h1 class="align-left"><%= @artist.name %></h1>
 
-<%= image_tag @artist.photo.image %>
+<p class="align-left"><%= @artist.bio %></p>
+</div>
 
-<p><%= @artist.bio %></p>
+<div class="songs">
+<ul>
+<% @artist.songs.each do |song| %>
+<li><i class="fa fa-trash" aria-hidden="true"></i>     <%= song.name %></li>
+<% end %>
+</ul>
+</div>

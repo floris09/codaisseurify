@@ -3,7 +3,7 @@
 
 <% @artists.each do |artist| %>
 <%= link_to artist do %>
-<div style="background:url(<%= artist.photo.image %>);background-size:cover;" class="round-img"><p><%= artist.name %></p></div>
+<div style="background:url(<%= artist.photo.image %>)no-repeat center center;background-size:cover;" class="round-img"><p><%= artist.name %></p></div>
 <% end %>
 <% end %>
 </div>

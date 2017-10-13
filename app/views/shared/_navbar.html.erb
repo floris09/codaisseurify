@@ -1,7 +1,9 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="<% link_to root_path%>">CODAISSEURIFY</a>
+      <%= link_to artists_path do %>
+      <a class="navbar-brand">CODAISSEURIFY</a>
+      <% end %>
     </div>
     <ul class="nav navbar-nav">
       <li><%= link_to "Artists", root_path %></li>

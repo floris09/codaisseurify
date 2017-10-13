@@ -1,26 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "artists.scss";
+@import "songs.scss";
 
 .container-fluid {
   text-align: center;
-}
-
-.round-img {
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border-radius: 100%;
-  text-align: center;
-  padding-top: 75px;
-  margin: 20px;
-}
-
-.round-img p {
-  font-size: 25px;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-
-a:hover {
-  text-decoration: none;
 }

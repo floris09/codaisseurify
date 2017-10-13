@@ -1,1 +1,40 @@
+.round-img {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 75px;
+  margin: 20px;
+}
 
+.round-img p {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.artist-img {
+  width: 400px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.artist-img {
+  float:left;
+  width: 400px;
+  left: 50px;
+  margin-right: 30px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.songs li {
+  margin-top: 30px;
+  display: inline-block;
+  width: 33%;
+}
