@@ -1,10 +1,22 @@
-<div class="container-fluid">
-<h1>Songs</h1>
+<div class=container-fluid>
+<%= image_tag @artist.photo.image, class: "artist-img" %>
+<h1 class="align-left"><%= @artist.name %></h1>
+
+<p class="align-left"><%= @artist.bio %></p>
+<ul class="inline">
+  <li><i class="fa fa-minus-circle" aria-hidden="true"></i> Delete Artist</li>
+</ul>
 </div>
+
 <div class="songs">
 <ul>
-<% @songs.each do |song| %>
-<li><%= song.name %> - <%= link_to song.artist.name, song.artist %></li>
+<% @artist.songs.each do |song| %>
+<li>
+  <%= link_to song_path(song) do %>
+  <i class="fa fa-trash" aria-hidden="true"></i>
+  <% end %>
+   <%= song.name %></li>
 <% end %>
 </ul>
+<%= render "song_form" %>
 </div>

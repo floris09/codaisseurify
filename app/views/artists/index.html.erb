@@ -2,7 +2,7 @@
 <h1>Artists</h1>
 
 <% @artists.each do |artist| %>
-<%= link_to artist do %>
+<%= link_to artist_songs_path(artist) do %>
 <div style="background:url(<%= artist.photo.image %>)no-repeat center center;background-size:cover;" class="round-img"><p><%= artist.name %></p></div>
 <% end %>
 <% end %>
