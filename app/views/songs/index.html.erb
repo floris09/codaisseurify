@@ -1,0 +1,10 @@
+<div class="container-fluid">
+<h1>Songs</h1>
+</div>
+<div class="songs">
+<ul>
+<% @songs.each do |song| %>
+<li><%= song.name %> - <%= link_to song.artist.name, song.artist %></li>
+<% end %>
+</ul>
+</div>
