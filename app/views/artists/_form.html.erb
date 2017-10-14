@@ -1,0 +1,23 @@
+<%= form_for @artist, html: { multipart: true } do |f| %>
+
+<div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div>
+  <%= f.label :bio %>
+  <%= f.text_field :bio %>
+</div>
+
+<label>Photos</label>
+<div class="form-group">
+  <span class="btn btn-default">
+    Upload Photo
+    <%= file_field_tag "image", type: :file, multiple: false %>
+  </span>
+</div>
+<div>
+  <%= f.submit "Save" %>
+
+</div>
+<% end %>

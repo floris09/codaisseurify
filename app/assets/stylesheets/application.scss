@@ -3,6 +3,57 @@
 @import "artists.scss";
 @import "songs.scss";
 
+body {
+  background: url(https://www.clipartsgram.com/image/1300662385-black-and-white-wallpaper-music-12.jpg);
+  background-size: cover;
+}
+
 .container-fluid {
   text-align: center;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+
+nav li {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
+}
+
+.whitebox {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.8);
+  margin: 10px;
+}
+
+li {
+  font-family: 'Jaldi', sans-serif;
+  font-size: 20px;
+}
+
+.fa-trash {
+  color: black;
+}
+
+.align-left {
+  text-align: left;
+}
+
+p {
+  font-family: 'Jaldi', sans-serif;
+}
+
+.btn-primary {
+  position: absolute;
+  right: 100px;
+  top: 90px;
+  background-color: black;
+}
+
+text_field {
+  width: 300px;
 }

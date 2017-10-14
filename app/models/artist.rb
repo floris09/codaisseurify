@@ -5,4 +5,7 @@ class Artist < ApplicationRecord
   validates :name, presence: true, length: { maximum: 50 }
   validates :bio, length: { maximum: 1000 }
 
+  def self.order_by_name
+    order :name
+  end
 end
