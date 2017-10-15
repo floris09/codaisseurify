@@ -39,6 +39,10 @@ li {
   color: black;
 }
 
+.fa-trash:hover{
+  color: red;
+}
+
 .align-left {
   text-align: left;
 }
@@ -47,11 +51,28 @@ p {
   font-family: 'Jaldi', sans-serif;
 }
 
-.btn-primary {
+.top-right-btn {
   position: absolute;
   right: 100px;
   top: 90px;
   background-color: black;
+}
+
+.top-right-btn:hover {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.top-btn {
+  position: absolute;
+  right: 200px;
+  top: 90px;
+  background-color: black;
+}
+
+.top-btn:hover {
+  background-color: red;
+  border: 1px solid red;
 }
 
 text_field {

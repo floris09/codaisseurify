@@ -3,6 +3,22 @@ class ArtistsController < ApplicationController
     @artists = Artist.all
   end
 
+  def index_az
+    @artists = Artist.order_by_name
+  end
+
+  def index_za
+    @artists = Artist.order_by_name_desc
+  end
+
+  def index_created_asc
+    @artists = Artist.order_by_created_at
+  end
+
+  def index_created_desc
+    @artists = Artist.order_by_created_at_desc
+  end
+
   def show
     @artist = Artist.find(params[:id])
     @photos = @room.photos

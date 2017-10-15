@@ -8,4 +8,16 @@ class Artist < ApplicationRecord
   def self.order_by_name
     order :name
   end
+
+  def self.order_by_name_desc
+    order name: :desc
+  end
+
+  def self.order_by_created_at
+    order :created_at
+  end
+
+  def self.order_by_created_at_desc
+    order created_at: :desc
+  end
 end
