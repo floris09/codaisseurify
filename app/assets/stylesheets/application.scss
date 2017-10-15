@@ -75,6 +75,33 @@ p {
   border: 1px solid red;
 }
 
-text_field {
-  width: 300px;
+input.text_field {
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  left: 300px;
+  border: none;
+  border-bottom: 2px solid red;
+  background-color: rgba(0,0,0,0.0);
+}
+
+input.text_field:focus {
+  outline: none;
+}
+
+input.submit {
+  margin: 5px;
+  display: inline-block;
+  position: relative;
+  left: 550px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color:white;
+}
+
+input.submit:hover {
+  background-color: red;
+  border: 1px solid red;
 }
