@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :photo do
-    artist nil
-    image "MyString"
+    artist :artist
+    image "String"
   end
 end

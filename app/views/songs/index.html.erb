@@ -17,8 +17,8 @@
 <ul>
 <% @artist.songs.each do |song| %>
 <li>
-  <%= link_to artist_song_path(@artist.id ,song.id), method: :delete, data: { confirm: "Are you sure?" } do %>
-  <i class="fa fa-trash" aria-hidden="true"></i>
+  <%= link_to artist_song_path(@artist.id ,song.id), method: :delete, data: { confirm: "Are you sure?" }, :id => "delete" do %>
+  <i  class="fa fa-trash" aria-hidden="true"></i>
   <% end %>
    <%= song.name %></li>
 <% end %>
