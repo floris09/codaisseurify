@@ -1,6 +1,7 @@
 class ArtistsController < ApplicationController
   def index
     @artists = Artist.all
+    @artists_az = Artist.order_by_name
   end
 
   def index_az
@@ -21,7 +22,6 @@ class ArtistsController < ApplicationController
 
   def show
     @artist = Artist.find(params[:id])
-    @photos = @room.photos
   end
 
   def new
