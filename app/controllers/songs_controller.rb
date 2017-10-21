@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+
   def index
     @artist = Artist.find(params[:artist_id])
     @songs = @artist.songs
@@ -14,13 +15,13 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.create(song_params.merge(artist_id: params[:artist_id]))
-    redirect_to artist_songs_path(params[:artist_id])
   end
 
   def destroy
+    @artist = Artist.find(params[:artist_id])
     @song = Song.find(params[:id])
     @song.destroy
-    redirect_to artist_songs_path(@song.artist)
+    redirect_to artist_songs_path(@artist)
   end
 
   private
