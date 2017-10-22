@@ -2,7 +2,6 @@ class ArtistsController < ApplicationController
 
   def index
     @artists = Artist.all
-    @artists_az = Artist.order_by_name
   end
 
   def index_az

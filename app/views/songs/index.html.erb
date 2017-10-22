@@ -11,7 +11,7 @@
   <h3 class="btn btn-primary top-right-btn"><i class="fa fa-minus-circle" aria-hidden="true"></i> Delete Artist</h3>
   <% end %>
 
-  <div id="delete-songs" onclick="deleteAllSongs(<%= @song_ids %>)" class="btn btn-primary top-btn">Delete All Songs</div>
+  <div id="delete-songs" onclick="deleteAllSongs(<%= @song_ids %>)" class="btn btn-primary top-delete-btn">Delete All Songs</div>
 
   <form onSubmit="submitSong(); return false">
     <input type="text" id="new-song" placeholder="Add a Song" required="true">
@@ -25,7 +25,7 @@
 <ul id="songlist">
 <% @songs.each do |song| %>
 <li id="<%= song.id %>">
-  <div id="delete-<%= song.id %>" onclick="deleteSong(<%= song.id %>)" class="btn btn-primary">Delete</div>
+  <div id="delete-<%= song.id %>" onclick="deleteSong(<%= song.id %>)" class="btn btn-danger">Delete</div>
    <%= song.name %></li>
 <% end %>
 </ul>

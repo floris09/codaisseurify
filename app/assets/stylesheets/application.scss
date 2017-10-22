@@ -105,3 +105,24 @@ input.submit:hover {
   background-color: red;
   border: 1px solid red;
 }
+
+#new-song {
+  width: 400px;
+  padding:2px;
+}
+
+#new-song:focus {
+  outline-color: red;
+}
+
+.top-delete-btn {
+  position: absolute;
+  right: 250px;
+  top: 110px;
+  background-color: black;
+}
+
+.top-delete-btn:hover {
+  background-color: red;
+  border: 1px solid red;
+}

@@ -21,7 +21,7 @@ function createSong(name) {
   })
   .done(function(){
     var listItem = document.createElement("li");
-    listItem.innerHTML = '<div class="btn btn-primary">Delete</div> ' + name;
+    listItem.innerHTML = '<div class="btn btn-danger">Delete</div> ' + name;
     list = document.getElementById('songlist');
     list.appendChild(listItem);
   })
