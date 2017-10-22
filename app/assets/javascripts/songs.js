@@ -8,20 +8,40 @@ function submitSong() {
 
 function createSong(name) {
 
-  var listItem = document.createElement("li");
-  listItem.innerHTML = '<i id="trash" class="fa fa-trash" aria-hidden="true"></i> ' + name;
-  list = document.getElementById('songlist');
-  list.appendChild(listItem);
-
   var newSong = { name: name };
 
   $.ajax({
-  type: "POST",
-  url: "songs.json",
-  data: JSON.stringify({
-      song: newSong
-  }),
-  contentType: "application/json",
-  dataType: "json"
-});
+    type: "POST",
+    url: "songs.json",
+    data: JSON.stringify({
+        song: newSong
+    }),
+    contentType: "application/json",
+    dataType: "json"
+  })
+  .done(function(){
+    var listItem = document.createElement("li");
+    listItem.innerHTML = '<div class="btn btn-primary">Delete</div> ' + name;
+    list = document.getElementById('songlist');
+    list.appendChild(listItem);
+  })
+  .fail(function(error){
+    error_message = error.responseJSON.title[0];
+    showError = document.getElementById('error-msg');
+    showError.innerHTML = error_message;
+  });
+}
+
+function deleteSong(songId){
+
+  $.ajax({
+    type: "DELETE",
+    url: `songs/${songId}.json`,
+    contentType: "application/json",
+    dataType: "json"
+  })
+  .done(function(data){
+    var item = document.getElementById(songId);
+    item.parentNode.removeChild(item);
+  });
 }
