@@ -45,3 +45,21 @@ function deleteSong(songId){
     item.parentNode.removeChild(item);
   });
 }
+
+function deleteAllSongs(songIds) {
+
+  songIds.forEach(function(id) {
+    $.ajax({
+      type: "DELETE",
+      url: `songs/${id}.json`,
+      contentType: "application/json",
+      dataType: "json"
+    })
+    .done(function(){
+      var item = document.getElementById(id);
+      item.parentNode.removeChild(item);
+    });
+
+  });
+
+}
