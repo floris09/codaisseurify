@@ -13,8 +13,8 @@ Ruby Application for displaying artists and songs.
   * Update song
   
 
-<img src="https://github.com/floris09/codaisseurify/blob/master/app/assets/images/Screen%20Shot%202017-12-04%20at%2013.41.29.png" alt="codaisseurify" width="48%" align="left"/>
-<img src="https://github.com/floris09/codaisseurify/blob/master/app/assets/images/Screen%20Shot%202017-12-04%20at%2013.42.08.png" alt="codaisseurify" width="48%" align="left"/>
+<img src="https://github.com/floris09/codaisseurify/blob/master/app/assets/images/Screen%20Shot%202017-12-04%20at%2013.41.29.png" alt="codaisseurify" width="45%" align="left"/>
+<img src="https://github.com/floris09/codaisseurify/blob/master/app/assets/images/Screen%20Shot%202017-12-04%20at%2013.42.08.png" alt="codaisseurify" width="45%" align="left"/>
 
 <br clear="left" />
 
