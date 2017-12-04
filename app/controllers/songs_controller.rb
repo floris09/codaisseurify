@@ -15,8 +15,17 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = Song.create(song_params.merge(artist_id: params[:artist_id]))
-  end
+    @artist = Artist.find(params[:artist_id])
+    song = @artist.songs.new(song_params)
+
+    if song.save
+       render status: :created, json: song
+    else
+       render status: 402, json:  {
+       errors: song.errors
+     }.to_json
+    end
+end
 
   def destroy
     @song = Song.find(params[:id])
